@@ -37,14 +37,14 @@ export default function Footer() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 py-12">
           {navLinks.map((column, colIndex) => (
-            <div className="p-4">
+            <div className="p-4" key={colIndex}>
               <h4 className="text-2xl text-background font-bold pb-4">
                 {column.name}
               </h4>
               <div className="flex flex-col gap-2" key={colIndex}>
                 {column.subMenu.map((link, index) => (
                   <Link
-                    key={index}
+                    key={index + colIndex}
                     to={link.url}
                     title={link.name}
                     className="text-lg hover:text-background"

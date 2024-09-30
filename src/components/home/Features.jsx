@@ -81,6 +81,7 @@ export default function Features() {
       </div>
       {featuredData.map((data, i) => (
         <Card
+          key={i}
           className={i === 0 || i === 1 || i === 9 ? "col-span-2" : ""}
           data={data}
         />
