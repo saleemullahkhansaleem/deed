@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #d3e41a;
+  --primary-muted: #d5daa0;
+  --secondary: #020b4f;
+  --muted: #999;
+  --background: #fff;
+  --background-muted: #eee;
+  --foreground: #2d304d;
+  --foreground-muted: #24273f;
+  ;
+}
+
+.cover-bg {
+  background-image: url('/images/img5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
