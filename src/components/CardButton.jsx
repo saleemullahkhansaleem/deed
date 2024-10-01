@@ -14,15 +14,17 @@ export default function CardButton({
       to={href}
       className={`${
         light
-          ? "text-background group-hover:text-secondary"
-          : "text-secondary group-hover:text-white"
-      } transition-colors duration-200 flex items-center gap-2 w-max uppercase text-xl ${className}`}
+          ? "text-background group-hover/card:text-secondary"
+          : "text-secondary group-hover/card:text-white"
+      } group/link transition-colors duration-200 flex items-center gap-2 w-max uppercase text-xl ${className}`}
       {...props}
     >
       <span>{children}</span>{" "}
       <span
-        className={`w-0 group-hover:w-24 transition-all h-[2px] ${
-          light ? "bg-secondary" : "group-hover:bg-white"
+        className={`w-0 group-hover/link:w-24 group-hover/card:w-24 transition-all h-[2px] ${
+          light
+            ? "bg-secondary"
+            : "group-hover/card:bg-white group-hover/link:bg-secondary"
         } ml-4 relative mt[1px]`}
       >
         <MdArrowForwardIos

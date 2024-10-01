@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Button, Container, CoverSection, Input } from "../components";
-import api from "../http/api";
+import { Button, Container, Input } from "../components";
 import { benefits } from "./CareerPage";
 
 export default function CareerApplyPage() {
@@ -32,20 +31,10 @@ export default function CareerApplyPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Form data", formData);
-    // api
-    //   .post("/users", formData)
-    //   .then((data) => console.log(data))
-    //   .catch((error) => console.error(error));
   };
 
   return (
     <>
-      {/* Cover Section */}
-      <CoverSection
-        title="Join Our Team"
-        description="We're looking for talented individuals to join our growing team. Apply now and take the next step in your career!"
-      />
-
       <div className="">
         <Container className="px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Career Application Form */}

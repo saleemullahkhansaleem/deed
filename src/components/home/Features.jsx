@@ -75,26 +75,17 @@ const featuredData = [
 
 export default function Features() {
   return (
-    <section className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <section className="my-4 grid grid-cols-1 md:grid-cols-3 gap-4">
       <div>
         <h2 className="text-6xl font-bold text-center mt-8">Featured</h2>
       </div>
       {featuredData.map((data, i) => (
         <Card
           key={i}
-          className={i === 0 || i === 1 || i === 9 ? "col-span-2" : ""}
+          className={i === 0 || i === 1 || i === 9 ? "md:col-span-2" : ""}
           data={data}
         />
       ))}
-      {/* <Card className="col-span-2" />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card className="col-span-2" /> */}
     </section>
   );
 }

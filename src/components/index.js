@@ -4,9 +4,7 @@ import Button from "./Button";
 import CardButton from "./CardButton";
 import SocialBar from "./SocialBar";
 import Header from "./Header";
-import CoverSection from "./CoverSection";
 import Footer from "./Footer";
-import DetailPage from "./DetailPage";
 import Input from "./Input";
 import BackToTopButton from "./BackToTopButton";
 import ScrollToTop from "./ScrollToTop";
@@ -16,11 +14,10 @@ import ScrollToTop from "./ScrollToTop";
 import HeroSection from "./home/HeroSection";
 import HomeBanner from "./home/HomeBanner";
 import Features from "./home/Features";
-import MainSection from "./home/MainSection";
-import Services from "./home/Services";
-import LogoCarousel from "./home/LogoCarousel";
-import EmergencyNumbers from "./home/EmergencyNumbers";
-import AboutSection from "./home/AboutSection";
+import OurMission from "./home/OurMission";
+import WhatWeDoSection from "./home/WhatWeDoSection";
+import GlobalImpact from "./home/GlobalImpact";
+import NewsSection from "./home/NewsSection";
 export {
   Container,
   Card,
@@ -28,9 +25,7 @@ export {
   CardButton,
   SocialBar,
   Header,
-  CoverSection,
   Footer,
-  DetailPage,
   Input,
   BackToTopButton,
   ScrollToTop,
@@ -39,9 +34,8 @@ export {
   HeroSection,
   HomeBanner,
   Features,
-  MainSection,
-  Services,
-  LogoCarousel,
-  EmergencyNumbers,
-  AboutSection,
+  OurMission,
+  WhatWeDoSection,
+  GlobalImpact,
+  NewsSection,
 };

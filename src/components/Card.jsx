@@ -14,7 +14,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`group min-h-80 bg-backgroundMuted p-4 flex flex-col justify-between relative cursor-pointer ${className}`}
+      className={`group/card min-h-80 bg-backgroundMuted p-4 flex flex-col justify-between relative cursor-pointer ${className}`}
     >
       <div>
         <p className="uppercase text-sm mb-6">{data.name}</p>
@@ -25,7 +25,7 @@ export default function Card({
         <img
           src="/images/hero-img.webp"
           alt="Card Photo"
-          className="w-0 group-hover:w-full h-full object-cover absolute top-0 left-0 transition-all duration-300"
+          className="w-0 group-hover/card:w-full h-full object-cover absolute top-0 left-0 transition-all duration-300"
         />
         <div className="absolute bottom-0 left-0 w-0 group-hover:w-80 h-16 bg-black/80 transition-all duration-200 blur-lg"></div>
       </Link>

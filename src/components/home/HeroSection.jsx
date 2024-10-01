@@ -11,11 +11,11 @@ export default function HeroSection() {
       />
       <div className="absolute top-0 w-full h-full bg-black/50">
         <Container className="py-8 flex items-center h-full">
-          <div className="text-white max-w-7xl">
-            <h1 className="text-8xl font-bold uppercase">
+          <div className="text-white max-w-7xl p-4">
+            <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold uppercase">
               Where do we go from here?
             </h1>
-            <h4 className="text-4xl mt-8">
+            <h4 className="text-xl md:text-4xl mt-8">
               Summit of the Future presents once-in-a-generation opportunity to
               act together for #OurCommonFuture
             </h4>

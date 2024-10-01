@@ -23,7 +23,7 @@ export default function Footer() {
     <footer className="bg-foregroundMuted text-backgroundMuted">
       <Container className="">
         <div className="p-4 xl:py-12 border-b ">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <img src="/images/logos/logo-d.png" alt="Logo" className="h-36" />
             <div className="max-w-lg p-4">
               <h4 className="text-2xl text-background font-bold pb-2">DEED</h4>

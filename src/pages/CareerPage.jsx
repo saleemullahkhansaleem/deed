@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Button, Container, CoverSection } from "../components";
-import api from "../http/api";
+import { Button, Container } from "../components";
+
 
 export const benefits = [
   {
@@ -52,10 +52,6 @@ export default function CareerPage() {
 
   return (
     <>
-      <CoverSection
-        title="Join Our Team"
-        description="We're on a mission to build innovative products. Come make an impact!"
-      />
 
       <Container className="px-4 my-12 text-center">
         <h2 className="text-4xl font-bold mb-6">Why Work With Us?</h2>
