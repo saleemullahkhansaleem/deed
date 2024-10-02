@@ -32,9 +32,9 @@ export default function BackToTopButton() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 left-6 z-50 p-3 bg-primary text-white rounded-full shadow-lg hover:bg-secondary hover:shadow-xl transition-all duration-300"
+          className="fixed bottom-6 left-6 z-50 p-3 bg-primary text-background rounded-full shadow-lg hover:bg-secondary hover:shadow-xl transition-all duration-300"
         >
-          <FaArrowUp className="text-xl" />
+          <FaArrowUp className="" />
         </button>
       )}
     </div>

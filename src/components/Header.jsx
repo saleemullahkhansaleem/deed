@@ -196,7 +196,7 @@ export default function Header() {
 
           <Link to="/" className="flex items-center justify-center mx-4 p-2">
             <img
-              src="/images/logos/logo.jpg"
+              src="/images/logos/logo.webp"
               alt="DEED Logo"
               title="Home"
               className="h-16 lg:h-24"
@@ -232,7 +232,7 @@ const Logo = () => (
     className="flex relative lg:hidden items-center justify-center mx-4 p-2"
   >
     <img
-      src="/images/logos/logo.jpg"
+      src="/images/logos/logo.webp"
       alt="DEED Logo"
       title="Home"
       className="h-16"
@@ -260,7 +260,7 @@ const DetailMenu = ({ data, subLinkData, setSubLinkData }) => {
   }, [data]);
 
   return (
-    <div className="mx-auto absolute top-full left-0 right-0 bg-background max-h-0 group-hover:max-h-[1000px] -z-10 group-hover:z-10 overflow-hidden transition-all duration-500 ease-in flex w-[900px] shadow-md">
+    <div className="mx-auto absolute top-full left-0 right-0 bg-background max-h-0 group-hover:max-h-[1000px] -z-10 group-hover:z-10 overflow-hidden transition-all duration-500 ease-in flex w-[900px] h-[400px] shadow-md">
       <Sidebar
         data={data}
         subLinkData={subLinkData}
