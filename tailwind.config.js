@@ -14,7 +14,7 @@ export default {
         foregroundMuted: "var(--foreground-muted)",
       },
       fontFamily: {
-        archivo: ["Archivo", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       animation: {
         "spin-slow": "spin 30s linear infinite",

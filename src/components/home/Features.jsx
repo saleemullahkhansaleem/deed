@@ -77,7 +77,9 @@ export default function Features() {
   return (
     <section className="my-4 grid grid-cols-1 md:grid-cols-3 gap-4">
       <div>
-        <h2 className="text-6xl font-bold text-center mt-8">Featured</h2>
+        <h2 className="text-5xl md:text-6xl font-bold text-center mt-8">
+          Featured
+        </h2>
       </div>
       {featuredData.map((data, i) => (
         <Card

@@ -1,97 +1,90 @@
-import {
-  MdArrowBackIos,
-  MdArrowBackIosNew,
-  MdArrowForward,
-  MdArrowForwardIos,
-} from "react-icons/md";
+import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import CardButton from "../CardButton";
 import { useState } from "react";
-import Container from "../Container";
-import Button from "../Button";
 
-const dataArray = [
+const slidesData = [
   {
     title: "Sustainable Transformation",
     description:
       "Including green, inclusive, and digital transitions: DEED works with communities to bring about changes in systems and structures that support sustainable development.",
-    imageUrl: "/images/structural-transformation.webp",
+    imageUrl: "/images/mission/structural-transformation.webp",
     color: "#1abc9c", // Turquoise
   },
   {
     title: "Leaving No One Behind",
     description:
       "A rights-based approach focused on empowerment, inclusion, equity, human agency, and human development for underprivileged communities.",
-    imageUrl: "/images/leaving-no-one-behind.webp",
+    imageUrl: "/images/mission/leaving-no-one-behind.webp",
     color: "#e74c3c", // Red
   },
   {
     title: "Building Resilience",
     description:
       "Strengthening communities to prevent, mitigate, and respond to crises, conflicts, natural disasters, and economic shocks.",
-    imageUrl: "/images/building-resilience.webp",
+    imageUrl: "/images/mission/building-resilience.webp",
     color: "#3498db", // Blue
   },
   {
     title: "Poverty and Inequality",
     description:
       "Addressing inequality of opportunities by investing in the capabilities of people to lift themselves above the poverty line and continue progressing.",
-    imageUrl: "/images/poverty-inequality.webp",
+    imageUrl: "/images/mission/poverty-inequality.webp",
     color: "#f39c12", // Orange
   },
   {
     title: "Community Governance",
     description:
       "Helping communities address emerging complexities by improving governance systems, promoting transparency, and reducing risks.",
-    imageUrl: "/images/community-governance.webp",
+    imageUrl: "/images/mission/community-governance.webp",
     color: "#9b59b6", // Purple
   },
   {
     title: "Environmental Resilience",
     description:
       "Supporting communities in building resilience to climate change, natural disasters, and social challenges by promoting environmental protection.",
-    imageUrl: "/images/environmental-resilience.webp",
+    imageUrl: "/images/mission/environmental-resilience.webp",
     color: "#2ecc71", // Green
   },
   {
     title: "Environmental Sustainability",
     description:
       "Putting nature at the heart of development by helping communities protect, manage, and value their natural resources.",
-    imageUrl: "/images/environmental-sustainability.webp",
+    imageUrl: "/images/mission/environmental-sustainability.webp",
     color: "#1f618d", // Dark Blue
   },
   {
     title: "Energy Access",
     description:
       "Increasing access to clean and renewable energy for underserved communities, promoting sustainable energy solutions.",
-    imageUrl: "/images/energy-access.webp",
+    imageUrl: "/images/mission/energy-access.webp",
     color: "#d35400", // Dark Orange
   },
   {
     title: "Gender Equality",
     description:
       "Challenging barriers to gender equality and empowering women through economic participation and leadership in their communities.",
-    imageUrl: "/images/gender-equality.webp",
+    imageUrl: "/images/mission/gender-equality.webp",
     color: "#e84393", // Pink
   },
   {
     title: "Digital Inclusion",
     description:
       "Supporting underserved communities to build inclusive, ethical, and sustainable digital platforms for social and economic growth.",
-    imageUrl: "/images/digital-inclusion.webp",
+    imageUrl: "/images/mission/digital-inclusion.webp",
     color: "#16a085", // Greenish-Teal
   },
   {
     title: "Strategic Innovation",
     description:
       "Empowering communities to develop adaptive and resilient systems that respond to long-term development needs.",
-    imageUrl: "/images/strategic-innovation.webp",
+    imageUrl: "/images/mission/strategic-innovation.webp",
     color: "#8e44ad", // Violet
   },
   {
     title: "Development Financing",
     description:
       "Partnering with governments, NGOs, and the private sector to mobilize funds and align capital for sustainable development initiatives.",
-    imageUrl: "/images/development-financing.webp",
+    imageUrl: "/images/mission/development-financing.webp",
     color: "#c0392b", // Dark Red
   },
 ];
@@ -103,7 +96,7 @@ export default function WhatWeDoSection() {
       <section className="grid grid-cols-1 xl:grid-cols-2 xl:min-h-[calc(100vh-112px)] w-full">
         <div className="w-full h-full bg-backgroundMuted flex items-center">
           <div className="space-y-8 max-w-lg m-auto p-4">
-            <h2 className="text-6xl font-bold mt-8">What we do</h2>
+            <h2 className="text-4xl md:text-6xl font-bold mt-8">What we do</h2>
             <p className="md:text-lg">
               DEED (Drive for Economic and Environmental Development) is
               dedicated to improving living standards by addressing poverty and
@@ -118,14 +111,15 @@ export default function WhatWeDoSection() {
         </div>
         <div className="h-full xl:h-[calc(100vh-112px)] w-full overflow-x-hidden relative">
           <div className="w-[1200%] grid grid-cols-12">
-            {dataArray.map((item, index) => (
+            {slidesData.map((item, index) => (
               <div
                 key={index}
                 className="w-full h-full xl:h-[calc(100vh-112px)] transition-transform duration-500"
                 style={{ transform: `translateX(-${slide * 100}%)` }}
               >
                 <img
-                  src="/images/hero-img.webp"
+                  // src="/images/hero-img.webp"
+                  src={item.imageUrl}
                   alt="What we do photo"
                   className="w-full h-2/5 object-cover"
                 />
@@ -196,12 +190,12 @@ export default function WhatWeDoSection() {
               <MdArrowBackIosNew size={24} />
             </button>
             <button
-              disabled={slide === dataArray.length - 1}
+              disabled={slide === slidesData.length - 1}
               title="Next"
               className="flex items-center justify-center w-12 h-12 bg-secondary hover:bg-primary rounded-full text-background disabled:bg-muted"
               onClick={() =>
                 setSlide((prev) =>
-                  prev < dataArray.length - 1 ? prev + 1 : prev
+                  prev < slidesData.length - 1 ? prev + 1 : prev
                 )
               }
             >
@@ -209,22 +203,6 @@ export default function WhatWeDoSection() {
             </button>
           </div>
         </div>
-      </section>
-      <section className="p-4 w-full flex items-center">
-        <Container className="space-y-12 p-4">
-          <h2 className="text-6xl font-bold mt-8">
-            Collaborate for Sustainable Impact
-          </h2>
-          <p className="md:text-lg max-w-5xl">
-            At DEED, we believe in building lasting partnerships that promote
-            economic and environmental development. Our mission is to uplift
-            communities through collaboration with donors, philanthropists,
-            government agencies, and I/NGOs. By working together, we aim to
-            create sustainable solutions that address poverty, improve living
-            standards, and support inclusive, long-term growth.
-          </p>
-          <Button href="/">Partner With Us</Button>
-        </Container>
       </section>
     </>
   );

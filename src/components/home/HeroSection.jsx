@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="h-[calc(100vh-112px)] w-full bg-primary relative">
       <img
-        src="/images/hero-img2.jpg"
+        src="/images/hero-img-2.webp"
         alt="Banner Photo"
         className="w-full h-full object-cover"
       />

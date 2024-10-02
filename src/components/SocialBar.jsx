@@ -49,7 +49,7 @@ export default function SocialBar() {
           <Link to={link.url} title={link.name} target="_blank">
             <link.icon
               size={20}
-              className="text-backround hover:text-secondary"
+              className="text-backround hover:text-primary"
             />
           </Link>
           {index !== socialLinks.length - 1 && <RxDividerVertical />}

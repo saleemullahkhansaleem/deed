@@ -74,15 +74,12 @@ export default function NewsSection() {
   return (
     <section className="my-4 grid grid-cols-1 md:grid-cols-3 gap-4">
       <div className="flex justify-center">
-        <h2 className="text-6xl font-bold  mt-8">
+        <h2 className="text-5xl md:text-6xl font-bold  mt-8">
           Recent <br /> News
         </h2>
       </div>
       {recentNewsData.map((data, i) => (
-        <Card
-          key={i}
-          data={data}
-        />
+        <Card key={i} data={data} />
       ))}
     </section>
   );

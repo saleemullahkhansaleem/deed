@@ -17,7 +17,6 @@ export default function Home() {
         <Features />
       </main>
       <OurMission />
-      <WhatWeDoSection />
       <GlobalImpact />
       <main className="px-4">
         <NewsSection />

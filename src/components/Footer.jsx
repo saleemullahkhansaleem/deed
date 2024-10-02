@@ -55,7 +55,7 @@ export default function Footer() {
               </div>
             </div>
           ))}
-          <div className="p-4 md:col-span-2 md:text-right">
+          <div className="p-4 lg:col-span-2 lg:text-right">
             <h4 className="text-2xl text-background font-bold pb-4">Contact</h4>
             <p>Office No: 5 Al-Malik Centre (Third Floor)</p>
             <p> 70 West Jinnah Avenue</p>
