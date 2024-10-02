@@ -21,15 +21,18 @@ export default function Card({
         <h3 className="text-2xl mb-12">{data.title}</h3>
         <p>{data.description}</p>
       </div>
-      <Link to={data.url} className="">
+      <Link
+        to={data.url}
+        className="w-0 group-hover/card:w-full h-full absolute top-0 left-0 transition-all duration-300"
+      >
         <img
           src="/images/hero-img.webp"
           alt="Card Photo"
-          className="w-0 group-hover/card:w-full h-full object-cover absolute top-0 left-0 transition-all duration-300"
+          className="w-full h-full object-cover"
         />
         <div className="absolute bottom-0 left-0 w-0 group-hover:w-80 h-16 bg-black/80 transition-all duration-200 blur-lg"></div>
       </Link>
-      <CardButton className="mb-0 z-10" href={data.url}>
+      <CardButton card className="mb-0 z-10" href={data.url}>
         {data.btnText || "Learn More"}
       </CardButton>
     </div>

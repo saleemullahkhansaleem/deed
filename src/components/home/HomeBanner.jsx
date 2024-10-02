@@ -5,7 +5,7 @@ export default function HomeBanner() {
   const navigate = useNavigate();
   return (
     <section
-      className="group mt-4 bg-primary grid grid-cols-1 md:grid-cols-2 cursor-pointer"
+      className="group/card mt-4 bg-primary grid grid-cols-1 md:grid-cols-2 cursor-pointer"
       onClick={() => navigate("/")}
     >
       <div className="relative overflow-hidden min-h-[200px] w-full order-2 md:order-1">
@@ -22,7 +22,7 @@ export default function HomeBanner() {
         <p className="text-xl">
           Charting a course towards achieving the Sustainable Development Goals
         </p>
-        <CardButton light href="/" className="">
+        <CardButton card href="/" className="">
           EXPLORE NOW
         </CardButton>
       </div>

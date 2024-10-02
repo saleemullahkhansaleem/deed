@@ -13,42 +13,42 @@ export const navLinks = [
         url: "/about-us",
         description:
           "DEED (Drive for Economic and Environmental Development) is an NGO committed to alleviating poverty, improving living standards, and fostering sustainable development through partnerships with various stakeholders.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Leadership",
         url: "/leadership",
         description:
           "Our leadership team at DEED is comprised of dedicated professionals with a shared vision of creating a sustainable and equitable environment for communities across Pakistan.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-sample.webp",
       },
       {
         name: "Executive Board",
         url: "/executive-board",
         description:
           "The DEED Executive Board oversees strategic initiatives and ensures that our programs align with our mission of economic empowerment and environmental sustainability.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Our Partners",
         url: "/partners",
         description:
           "DEED collaborates with government agencies, international organizations, and private donors to amplify our impact in the areas of economic and environmental development.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Funding",
         url: "/funding",
         description:
           "Our funding model relies on contributions from philanthropic organizations, international donors, and government agencies to drive our projects and initiatives.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Transparency",
         url: "/transparency",
         description:
           "At DEED, we prioritize transparency and accountability in all our operations, ensuring that our stakeholders are informed about how resources are allocated and utilized.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
     ],
   },
@@ -60,28 +60,28 @@ export const navLinks = [
         url: "/sustainable-goals",
         description:
           "DEED aligns its efforts with the UN Sustainable Development Goals, focusing on poverty eradication, economic growth, and environmental sustainability.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-sample.webp",
       },
       {
         name: "Human Development Report",
         url: "/human-development-report",
         description:
           "Our annual Human Development Report tracks the progress of our initiatives and their impact on improving living conditions and fostering economic opportunities.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Our Strategic Plan",
         url: "/strategic-plan",
         description:
           "The DEED Strategic Plan outlines our long-term objectives and the pathways to achieve sustainable development and poverty reduction in the communities we serve.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Our Expertise",
         url: "/our-expertise",
         description:
           "We bring specialized expertise in poverty alleviation, community development, environmental conservation, and economic empowerment through various initiatives.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
     ],
   },
@@ -93,35 +93,35 @@ export const navLinks = [
         url: "/news",
         description:
           "Stay updated with the latest news and announcements from DEED about our ongoing projects and collaborations.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Results",
         url: "/results",
         description:
           "See the measurable results of our efforts in uplifting communities, driving economic growth, and promoting sustainable practices.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Publications",
         url: "/publications",
         description:
           "Browse our research papers, reports, and publications that highlight the progress and challenges in our mission towards sustainable development.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Blogs",
         url: "/blogs",
         description:
           "Read insightful articles and opinion pieces from DEED experts and partners on various topics related to economic and environmental development.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Stories",
         url: "/stories",
         description:
           "Discover stories of individuals and communities positively impacted by DEED’s initiatives, and how we are making a real difference on the ground.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
     ],
   },
@@ -133,35 +133,35 @@ export const navLinks = [
         url: "/careers",
         description:
           "Join our team and contribute to our mission of fostering economic and environmental development across Pakistan.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Procurement",
         url: "/procurement",
         description:
           "Learn more about procurement opportunities and how you can collaborate with DEED on various projects and initiatives.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "DEED Shop",
         url: "/shop",
         description:
           "Support our cause by purchasing eco-friendly products from the DEED Shop. All proceeds go towards funding our community projects.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "DEED Giving",
         url: "/giving",
         description:
           "Make a donation to DEED and help us drive impactful projects that uplift communities and promote sustainable development.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
       {
         name: "Contact Us",
         url: "/contact-us",
         description:
           "Get in touch with us to learn more about our work, partnership opportunities, or how you can contribute to DEED's mission.",
-        imageUrl: "/images/mission.jpg",
+        imageUrl: "/images/menu/menu-2.webp",
       },
     ],
   },
@@ -242,7 +242,7 @@ const Logo = () => (
 
 const NavItem = ({ link, onHover, subLinkData, setSubLinkData }) => (
   <div
-    className="group p-4 hover:text-primary text-foreground flex items-center cursor-pointer"
+    className="group p-4 hover:text-primary text-foreground flex items-center cursor-default"
     onMouseEnter={onHover}
   >
     <span className="m-auto">{link.name}</span>
@@ -267,7 +267,7 @@ const DetailMenu = ({ data, subLinkData, setSubLinkData }) => {
         setSubLinkData={setSubLinkData}
       />
       <DetailContent subLinkData={subLinkData} />
-      <DetailImage />
+      <DetailImage imageUrl={subLinkData.imageUrl} />
     </div>
   );
 };
@@ -306,10 +306,10 @@ const DetailContent = ({ subLinkData }) => (
   </div>
 );
 
-const DetailImage = () => (
+const DetailImage = ({ imageUrl }) => (
   <div className="pt-8 bg-backgroundMuted">
     <img
-      src="/images/menu/menu-sample.webp"
+      src={imageUrl}
       alt="Person Working"
       className="object-cover h-full w-52"
     />

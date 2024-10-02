@@ -11,21 +11,21 @@ const impactData = [
     unit: "Million",
     description:
       "people benefited from stronger policy and market conditions for sustainable energy",
-    imageUrl: "/images/impact-2.webp",
+    imageUrl: "/images/impact-1.webp",
   },
   {
     number: "400",
     unit: "Million",
     description:
       "registered voters supported to participate in elections in 2022 and 2023",
-    imageUrl: "/images/impact.webp",
+    imageUrl: "/images/impact-2.webp",
   },
   {
     number: "$100",
     unit: "Billion",
     description:
       "private capital aligned with the Sustainable Development Goals",
-    imageUrl: "/images/impact-2.webp",
+    imageUrl: "/images/impact.webp",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function GlobalImpact() {
 
 function GlobalImpactSection() {
   return (
-    <section className="w-full min-h-[calc(100vh-112px)] bg-secondary grid grid-cols-1 md:grid-cols-4">
+    <section className="w-full min-h-[calc(100vh-112px)] bg-secondary grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
       {impactData.map((item, index) => (
         <div className="relative group/global" id="global-counts" key={index}>
           <div className="w-full h-full absolute top-0 left-0 right-0 hidden group-hover/global:block">
@@ -65,7 +65,7 @@ function GlobalImpactSection() {
             />
           </div>
           <div className="w-full h-full absolute top-0 left-0 right-0 hidden group-hover/global:block bg-lime-700/40"></div>
-          <div className="z-10 relative p-12 flex gap-4 items-center justify-center h-full text-background">
+          <div className="z-10 relative p-12 flex gap-4 items-center h-full text-background">
             <div>
               <h2 className="text-[110px] font-bold mb-2 text-secondary text-stroke font-sans">
                 {item.number}

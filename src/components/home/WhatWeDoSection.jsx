@@ -184,22 +184,22 @@ export default function WhatWeDoSection() {
             <button
               disabled={slide === 0}
               title="Back"
-              className="flex items-center justify-center w-12 h-12 bg-secondary hover:bg-primary rounded-full text-background disabled:bg-muted"
+              className="flex items-center justify-center w-10 h-10 bg-secondary hover:bg-primary rounded-full text-background disabled:bg-muted"
               onClick={() => setSlide((prev) => (prev > 0 ? prev - 1 : prev))}
             >
-              <MdArrowBackIosNew size={24} />
+              <MdArrowBackIosNew size={20} />
             </button>
             <button
               disabled={slide === slidesData.length - 1}
               title="Next"
-              className="flex items-center justify-center w-12 h-12 bg-secondary hover:bg-primary rounded-full text-background disabled:bg-muted"
+              className="flex items-center justify-center w-10 h-10 bg-secondary hover:bg-primary rounded-full text-background disabled:bg-muted"
               onClick={() =>
                 setSlide((prev) =>
                   prev < slidesData.length - 1 ? prev + 1 : prev
                 )
               }
             >
-              <MdArrowForwardIos size={24} />
+              <MdArrowForwardIos size={20} />
             </button>
           </div>
         </div>
