@@ -24,9 +24,9 @@ export default function AboutUs() {
       </section>
       <section>
         <Container className="py-12 px-4">
-          <div className="space-y-12">
-            <div className="">
-              <p className="text-sm md:text-xl text-foregroundMuted max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="lg:col-span-2 flex items-center h-full">
+              <p className="text-sm md:text-xl text-foregroundMuted m-auto p-4">
                 Drive for Economic and Environmental Development (DEED) is a
                 non-governmental organization based in Islamabad, established
                 under Section 42 of the Companies Ordinance 1984. DEED’s mission
@@ -36,7 +36,7 @@ export default function AboutUs() {
               </p>
             </div>
 
-            <div className="bg-backgroundMuted p-8 shadow-lg space-y-4">
+            <div className="bg-backgroundMuted p-8 space-y-4">
               <h3 className="text-2xl font-semibold text-secondary">
                 Our Vision
               </h3>
@@ -46,7 +46,7 @@ export default function AboutUs() {
               </p>
             </div>
 
-            <div className="bg-backgroundMuted p-8 shadow-lg space-y-4">
+            <div className="bg-backgroundMuted p-8 space-y-4">
               <h3 className="text-2xl font-semibold text-secondary">
                 Our Mission
               </h3>
@@ -57,7 +57,7 @@ export default function AboutUs() {
               </p>
             </div>
 
-            <div className="bg-backgroundMuted p-8 shadow-lg space-y-4">
+            <div className="bg-backgroundMuted p-8 space-y-4 lg:col-span-2">
               <h3 className="text-2xl font-semibold text-secondary">
                 Aims and Objectives
               </h3>
